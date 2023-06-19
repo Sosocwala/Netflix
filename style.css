@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: arial;
+}
+.welcome-div{ 
+    border-bottom: 10px solid #222;
+    position: relative;
+}
+.welcome-div::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./imagies/net_banner.jpg') rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0.3;
+
+
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* nav bar*/
+.nav div {
+    display: flex;
+    width: 85%;
+    padding: 15;
+    font-size: 35px;
+    
+}
+.nav div p {
+    flex: 1 ;
+    color: red;
+    font-weight: bold;
+}
+.nav div a{
+    font-size: 15px;
+    background-color: red;
+    padding: 3px;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+/* Wecome section*/
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.welcome div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 140px 0px 195px 0px;
+    background-color: transparent;
+}
+.welcome div h1{
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+}
+.welcome div h3{
+    font-size: 23;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.welcome div p{
+    font-size:16;
+    margin-top: 22;
+}
+.welcome div form{
+    display: flex;
+    margin-top: 15;
+}
+.welcome div form button{
+    width: 180px;
+    height: 50px;
+    background-color: red;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    border: 0;
+    outline: none;
+}
+.welcome div form input {
+    width: 310px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+}
+
+/* sections*/
+
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid #222;
+    padding: 50px 0px 50px 0px;
+}
+.sec div {
+    display: flex;
+    background-color: transparent;
+    width: 60%;
+}
+/* Text */
+.sec div .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+.sec div .text h2{
+    font-size: 2.3em;
+
+}
+.sec div .text p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+/*Imagies*/
+.sec div .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec div .img img{
+    width: 500px;
+    height: 360px;
+}
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-div{
+    width: 60%;
+    padding: 200px 0px 200px 0px;
+    display: flex;
+}
+footer .footer-div div{
+    width: 400px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-div div p{
+    margin-bottom: 15px;
+    color: #777;
+}
+footer .footer-div div a{
+    margin-top: 15px;
+    text-decoration: none;
+    color: #777;
+}
